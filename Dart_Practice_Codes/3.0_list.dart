@@ -38,7 +38,7 @@ print(lst2.reversed);
   print(Students[3]);
   print(Students.runtimeType);
 
-  ///## Inser list into another list
+  ///## Insert list into another list
   // Spresd operator
   List<String>women=['Anima','Rosa','Afifa'];
   List<String>men=['Sabbir','Likhon','Adib'];
