@@ -1,5 +1,5 @@
 void main(){
-//without type safety
+//## without type safety
 var firstName="SABBIR";
 dynamic lastName="HOSSAIN";
 var myAge =18;
@@ -7,7 +7,7 @@ var myAge =18;
 print(firstName+" "+lastName);
 print(myAge);
 
-//Dart code with type safety
+//## Dart code with type safety
 
 //String variable
 String name1="SABBIR";
@@ -28,7 +28,7 @@ bool failed=false;
 print(passed);
 print(failed);
 
-//operator in dart
+//## operator in dart
 
  int a= 200;
  int b= 300;
@@ -56,7 +56,7 @@ print(division);
 var modulus=9%5;
 print(modulus);
 
-//type casting in dart
+//## type casting in dart
 int f= (a/b).toInt();
 print(f);
 
