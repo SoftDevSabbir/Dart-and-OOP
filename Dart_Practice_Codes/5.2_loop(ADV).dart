@@ -37,21 +37,19 @@ void main(){
   for (var value in Profile.values){
    print(value);
   }
+  //### forEach Loop in dart
+  List <String> name=['Sonam','Abir','Sumit','RAbbil'];
+  name.forEach((value) { print(value);});
 
-  ///## forEach loop
-  //# forEach loop with List (List and Set same procedure)
-
- List <String> name=['Sonam','Abir','Sumit','RAbbil'];
-  name.forEach((x)=>print (x));
-  
   //# forEach loop useing List to Map convert
-    name.asMap().forEach((i, value)=> ('$i=$value'));
+
+name.asMap().forEach((key, value) {print('$key:$value');});
 
   //# forEach loop with Map
 
   Map<String,String> address={
     'Name':'Sabbir','City':'Kushtia','State':'khulna'
   };
-  address.forEach((x, y)=>print('$x=$y'));
+  address.forEach((key, value) {print('$key:$value');});
 
 }
