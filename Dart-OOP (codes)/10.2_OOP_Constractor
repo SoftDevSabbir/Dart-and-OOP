@@ -1,38 +1,35 @@
 
-/// ## Constractor in OOP
+///## Constractor Type in OOP
+
 void main(){
-  //Creating an obj
-  var obj=Mobile("A100", 4);
-  obj.show();
-
-  var obj1=Mobile.memory(12);
-
+  var obj =A();
+  var obj_1=B(10, 20);
+  var obj_2 =C.namedConst("Sabbir", "Kushtia");
 }
 
-class Mobile{
-  //Instance Variable
-  String? model;
-  int? ram;
+// constractor name must simillar as class name
+// # Default constractor example:
+class A {
 
-   //## Constractor
-
-// Mobile(m,r){
-//   this.model=m;
-//   this.ram=r;
-//   print("Constractor Called");
-// }
-
-Mobile(this.model,this.ram); // best way to create constractor
-
-//Instance Method
-show(){
-  print(model);
-  print(ram);
+  //Default Constractor
+  A(){
+    print("Deafault Constractor......");
+  }
 }
 
-// ## Named Constractor
-Mobile.memory(int m){
-  print("Named Constrctor Called");
-  print(m);
+// # parameterize constractor example:
+class B{
+
+  //parameterize Constractor
+  B(int a,int b){
+print("a=$a and b=$b");
+  }
 }
+
+// # Named constractor example:
+class C{
+  // Named Constractor.....>
+  C.namedConst(String name ,String add){
+    print("My Name is $name from $add");
+  }
 }
