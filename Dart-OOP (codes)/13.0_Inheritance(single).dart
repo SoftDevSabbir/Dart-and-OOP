@@ -1,5 +1,5 @@
 
-/// ## Ingeritance
+/// ## Inheritance
 
 
 void main(){
