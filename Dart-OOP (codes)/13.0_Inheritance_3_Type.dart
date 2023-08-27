@@ -1,7 +1,7 @@
 
 /// ### Inheritance.....> 1. single Inheritance, 2. Multi-Level Inherutance , 3. Hierarchical Inheritance
 
-// 1. # single inheritance code start
+✅// 1. # single inheritance code start
 void main(){
   var obj= Son();
   obj.getValue(1000);
@@ -32,7 +32,7 @@ class Son extends Father{
 
 
 
-/// 2. ## Multy-Level inheritance start
+✅/// 2. ## Multy-Level inheritance start
 
 
 void main(){
@@ -40,14 +40,12 @@ void main(){
   obj.getValue(10000);
   obj.disp();
 }
-// # Muli-Level inheritance
 
 // parent class
 class Father {
   int? money;
   getValue(m){
     money=m;
-
 
   }
 }
@@ -75,3 +73,42 @@ class GrandSon extends Son{
 
 //Multi-Level inhertiance end
 
+✅// 3. ## Hierarchical Inheritance....> all sub class can be one parent class
+
+void main(){
+  var obj=Son();
+  obj.getValue(10000);
+  obj.disp();
+
+  var d_obj=Daugher();
+  d_obj.getValue(40000);
+  d_obj.disp();
+}
+
+// parent class
+class Father {
+  int? money;
+  getValue(m){
+    money=m;
+
+
+  }
+}
+
+class Son extends Father{
+  String car= "i 10";
+  disp() {
+  print(car);
+  print(money);
+  }
+
+}
+class Daugher extends Father{
+  String bike= " K6";
+  disp() {
+  print(bike);
+  print(money);
+  }
+
+}
+// Hierarchical Inheritance End...
