@@ -1,4 +1,6 @@
 void main() {
+
+  /// ______________ 2d List ___________________
   List<List<String>> myList = [
     ["A", "B", "C", "D", "E", "F"],
     ["am", 'is', 'are', 'was', 'were'],
@@ -21,6 +23,8 @@ void main() {
   ];
   print(bList[0][1]);
 
+
+  ///_________ 3d List ______________
   List<List<List<dynamic>>> newList = [
     [
       [1, "c"],
